@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather API</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+    <!-- The container to hold the weather information -->
+    <div class="container">
+        <!-- Display the name of the city and the country, based on the users geolocation -->
+        <h2 id="location" class="name"></h2>
+
+        <!-- This div displays the weather details: The icons for the weather, the tmeperature, and the weather description -->
+        <div class="main-info">
+            <img src="" alt="Weather Icon" id="weatherIcon" style="height: 100px; width: auto;">
+            <div class="temperatureInfo">
+                <h1 id="temp" style="font-size: 150px; margin: 0;"></h1>
+            </div>
+            <h3 id="weatherDesc" style="font-size: 75px; margin: 0;"></h3>
+        </div>
+        
+        <!-- The button to toggle the temperature between fahrenheit and celsius-->
+        <div style="margin-bottom: 25px;">
+            <span class="toggle" id="switch">
+            <input type="checkbox">
+            <label data-off="&#0176;C" data-on="&#0176;F"></label>
+            </span>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
